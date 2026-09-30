@@ -9,7 +9,7 @@ Next.js (App Router), TypeScript, plain CSS, Supabase (auth and data), deployed 
 - `npm run lint` — lint the code
 
 ## Never
-- Add a dependency without asking first.
+- Add a dependency without asking first. If a task would normally use a package, stop and ask before writing code: quote this rule, name each package, and say in one sentence what it does and why the task needs it. Do not get around this rule by hand-writing a replacement for the package.
 - Edit .env or any environment variable.
 - Change auth configuration without saying what is changing and why.
 - Create new top-level folders.

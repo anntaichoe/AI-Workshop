@@ -40,7 +40,7 @@ export default function StudyPage() {
         <LoggedIn
           session={session}
           onLogOut={async () => {
-            await logOut(session);
+            await logOut();
             setSession(null);
           }}
         />

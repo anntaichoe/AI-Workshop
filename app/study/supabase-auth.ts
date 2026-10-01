@@ -16,7 +16,7 @@ export function isConfigured(): boolean {
 
 let client: SupabaseClient | null = null;
 
-function supabase(): SupabaseClient {
+export function supabase(): SupabaseClient {
   if (!SUPABASE_URL || !SUPABASE_KEY) {
     throw new Error("The site is not connected to Supabase yet.");
   }

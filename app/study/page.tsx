@@ -9,6 +9,7 @@ import {
   signUp,
   type Session,
 } from "./supabase-auth";
+import TaskList from "./task-list";
 import "./study.css";
 
 export default function StudyPage() {
@@ -59,14 +60,17 @@ function LoggedIn({
   onLogOut: () => void;
 }) {
   return (
-    <div className="study-card">
-      <p>
-        You are logged in as <strong>{session.email}</strong>.
-      </p>
-      <button type="button" onClick={onLogOut}>
-        Log out
-      </button>
-    </div>
+    <>
+      <div className="study-card">
+        <p>
+          You are logged in as <strong>{session.email}</strong>.
+        </p>
+        <button type="button" onClick={onLogOut}>
+          Log out
+        </button>
+      </div>
+      <TaskList />
+    </>
   );
 }
 

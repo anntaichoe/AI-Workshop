@@ -19,3 +19,9 @@ Plain CSS only, no CSS framework. Keep components small and colocated with the p
 
 ## Current focus
 See roadmap.md. Work only on the slice marked ACTIVE.
+
+## Before you open a pull request
+Update roadmap.md and project-state.md to match what you just did, and include both in the same pull request:
+- roadmap.md: change the slice you built from ACTIVE to DONE, and the next pending slice to ACTIVE.
+- project-state.md: set Last updated to today's date, and rewrite Works, Broken or flaky, Environment notes and Next session so each one is true once this pull request is merged. Write Works as plain sentences about what a person can do on the live site.
+In your final reply, say that you updated both files.
